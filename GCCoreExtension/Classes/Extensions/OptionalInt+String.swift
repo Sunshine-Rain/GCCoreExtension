@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension Optional where Wrapped == Int {
+public extension Optional where Wrapped == Int {
     func toString(dftVal: String = "--") -> String {
         return self != nil ? String(self!) : dftVal
     }

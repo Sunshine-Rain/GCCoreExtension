@@ -7,13 +7,13 @@
 
 import Foundation
 
-extension Double {
-    public enum BreakMode {
+public extension Double {
+    enum BreakMode {
         case round
         case cut
     }
     
-    public func toString(precision: UInt = 2, mode: BreakMode = .cut) -> String {
+    func toString(precision: UInt = 2, mode: BreakMode = .cut) -> String {
         switch mode {
         case .round:
             return String(format: "%.\(precision)f", self)

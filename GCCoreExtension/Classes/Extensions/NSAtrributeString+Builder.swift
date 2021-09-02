@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension NSMutableAttributedString {
+public extension NSMutableAttributedString {
     func addFont(_ font: UIFont, range: NSRange? = nil) -> Self {
         addAttribute(.font, value: font, range: safeRange(range))
         return self
