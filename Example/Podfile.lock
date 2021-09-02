@@ -1,0 +1,16 @@
+PODS:
+  - GCCoreExtension (0.1.0)
+
+DEPENDENCIES:
+  - GCCoreExtension (from `../`)
+
+EXTERNAL SOURCES:
+  GCCoreExtension:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  GCCoreExtension: d8d981ccd44dd9eecb41ba03889e90e28a8be7a7
+
+PODFILE CHECKSUM: e705c9cb287375d63685f7457eb3c4cd5242e54f
+
+COCOAPODS: 1.10.1
