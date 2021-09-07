@@ -12,26 +12,26 @@ public extension String {
         return NSMutableAttributedString(string: self)
     }
     
-    func addFontAttribte(_ font: UIFont, range: NSRange? = nil) -> NSMutableAttributedString {
+    func addFontAttribute(_ font: UIFont, range: NSRange? = nil) -> NSMutableAttributedString {
         let retStr = NSMutableAttributedString(string: self)
         retStr.addAttribute(.font, value: font, range: safeRange(range))
         return retStr
     }
     
-    func addForegroundColorAttribte(_ color: UIColor, range: NSRange? = nil) -> NSMutableAttributedString {
+    func addForegroundColorAttribute(_ color: UIColor, range: NSRange? = nil) -> NSMutableAttributedString {
         let retStr = NSMutableAttributedString(string: self)
         retStr.addAttribute(.foregroundColor, value: color, range: safeRange(range))
         return retStr
     }
     
-    func addBackgroundColorAttribte(_ color: UIColor, range: NSRange? = nil) -> NSMutableAttributedString {
+    func addBackgroundColorAttribtue(_ color: UIColor, range: NSRange? = nil) -> NSMutableAttributedString {
         let retStr = NSMutableAttributedString(string: self)
         retStr.addAttribute(.backgroundColor, value: color, range: safeRange(range))
         
         return retStr
     }
     
-    func addFontAttribte(_ paraStyle: NSParagraphStyle, range: NSRange? = nil) -> NSMutableAttributedString {
+    func addParaStyleAttribtue(_ paraStyle: NSParagraphStyle, range: NSRange? = nil) -> NSMutableAttributedString {
         let retStr = NSMutableAttributedString(string: self)
         retStr.addAttribute(.paragraphStyle, value: paraStyle, range: safeRange(range))
         return retStr

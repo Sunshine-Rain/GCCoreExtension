@@ -18,7 +18,7 @@ public extension Double {
         case .round:
             return String(format: "%.\(precision)f", self)
         case .cut:
-            let s = String(format: "%.\(precision + 1)", self)
+            let s = String(format: "%.\(precision + 1)f", self)
             let endIndex = s.index(before: s.endIndex)
             return String(s[...endIndex])
         }
