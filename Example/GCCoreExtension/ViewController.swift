@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import GCCoreExtension
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        print(DeviceInfoUtil.getDeviceModelName())
     }
 
     override func didReceiveMemoryWarning() {
