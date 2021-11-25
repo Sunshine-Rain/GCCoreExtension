@@ -43,7 +43,7 @@ public extension String {
         return retStr
     }
     
-    private func safeRange(_ range: NSRange?) -> NSRange {
+    func safeRange(_ range: NSRange?) -> NSRange {
         guard let range = range,
               range.location + range.length <= count else {
             return NSMakeRange(0, count)

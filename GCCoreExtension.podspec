@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GCCoreExtension'
-  s.version          = '0.0.2'
-  s.summary          = 'Basic Extensions for swift Foundation.'
+  s.version          = '0.0.3'
+  s.summary          = 'Basic Extensions and Utils for swift.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,18 +18,17 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-  Basic Extensions for swift Foundation.
+  Basic functions、protocols、extensions、utils for swift.
                        DESC
 
   s.homepage         = 'https://github.com/Sunshine-Rain/GCCoreExtension'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '1137576021@qq.com' => '1137576021@qq.com' }
+  s.author           = { 'quan' => '1137576021@qq.com' }
   s.source           = { :git => 'https://github.com/Sunshine-Rain/GCCoreExtension.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
-
   s.source_files = 'GCCoreExtension/Classes/**/*'
   
   # s.resource_bundles = {
