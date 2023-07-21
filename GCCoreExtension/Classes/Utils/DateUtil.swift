@@ -39,11 +39,15 @@ open class DateUtil {
         }
     }
     
-    private static func safeGetCachedFormatter(_ pattern: String) -> DateFormatter {
+    private static func safeGetCachedFormatter(_ pattern: String, locale: Locale? = nil) -> DateFormatter {
+        var locale = locale
+        if locale == nil { locale = Locale(identifier: "en_US_POSIX") }
+        
         if Thread.isMainThread {
             var formatter = formatterCaches[pattern]
             if formatter == nil {
                 formatter = DateFormatter()
+                formatter!.locale = locale
                 formatter!.dateFormat = pattern
                 formatterCaches[pattern] = formatter!
             }
@@ -55,6 +59,7 @@ open class DateUtil {
                 formatter = formatterCaches[pattern]
                 if formatter == nil {
                     formatter = DateFormatter()
+                    formatter!.locale = locale
                     formatter!.dateFormat = pattern
                     formatterCaches[pattern] = formatter!
                 }
